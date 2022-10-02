@@ -8,6 +8,7 @@ import os
 import pandas as pd
 from tqdm import tqdm
 
+# Set cuda if available
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # Load the model
